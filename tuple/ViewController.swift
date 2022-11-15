@@ -8,22 +8,32 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-var a = 1
-var b = 2
-            
-print(a)
-print(b)
+        enum Colors {
+            case black
+            case red
+            case white
+            case yellow
+            case grey
+        }
+        let colors = Colors.white
         
-(a,b) = (b,a)
-  
-print(a)
-print(b)
-            
+        switch colors {
+        case .black:
+            print("black")
+        case.red:
+            print("red")
+        case.white:
+            print("white")
+        case.yellow:
+            print("yellow")
+        case.grey:
+            print("grey")
+        }
+        
     }
 }
-
